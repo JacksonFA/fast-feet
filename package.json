@@ -10,13 +10,21 @@
   },
   "scripts": {
     "dev": "tsx watch src/main.ts",
-    "build": "tsup src/main.ts"
+    "build": "tsup src/main.ts",
+    "test": "vitest run"
   },
   "dependencies": {},
   "devDependencies": {
+    "@swc/core": "^1.5.24",
     "@types/node": "20.12.13",
-    "tsx": "4.11.0",
+    "@types/supertest": "^6.0.2",
+    "supertest": "^7.0.0",
+    "tsconfig-paths": "^4.2.0",
     "tsup": "8.0.2",
-    "typescript": "5.4.5"
+    "tsx": "4.11.0",
+    "typescript": "5.4.5",
+    "unplugin-swc": "^1.4.5",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^1.6.0"
   }
 }

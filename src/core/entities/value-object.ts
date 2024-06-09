@@ -5,6 +5,10 @@ export abstract class ValueObject<Props> {
     this.props = props
   }
 
+  get value() {
+    return this.props
+  }
+
   public equals(vo: ValueObject<unknown>) {
     if (vo === null || vo === undefined) return false
     if (vo.props === undefined) return false

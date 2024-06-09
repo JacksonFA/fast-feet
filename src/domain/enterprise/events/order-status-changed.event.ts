@@ -1,6 +1,6 @@
 import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import { DomainEvent } from '@/core/events/domain-event'
-import { Order } from '../order'
+import { Order } from '../entities/order'
 
 export class OrderStatusChangedEvent implements DomainEvent {
   public ocurredAt: Date

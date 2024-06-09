@@ -13,4 +13,24 @@ export class Courier extends Entity<CourierProps> {
     const courier = new Courier(props, id)
     return courier
   }
+
+  get name() {
+    return this.props.name
+  }
+
+  set name(name: string) {
+    this.props.name = name
+  }
+
+  get document() {
+    return this.props.document
+  }
+
+  set document(document: CPF) {
+    this.props.document = document
+  }
+
+  get password() {
+    return this.props.password
+  }
 }
